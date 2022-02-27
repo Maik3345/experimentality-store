@@ -1,0 +1,120 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#male",
+      "menu-item#woman",
+      "menu-item#junior",
+      "menu-item#children",
+      "menu-item#accessories",
+      "menu-item#deals"
+    ]
+  },
+  "menu-item#male": {
+    "props": {
+      "id": "menu-item-male",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Hombre",
+        "text": "Hombre"
+      }
+    }
+  },
+  "menu-item#woman": {
+    "props": {
+      "id": "menu-item-woman",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/woman",
+        "noFollow": true,
+        "tagTitle": "Mujer",
+        "text": "Mujer"
+      }
+    }
+  },
+  "menu-item#junior": {
+    "props": {
+      "id": "menu-item-woman",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/junior",
+        "noFollow": true,
+        "tagTitle": "Junio",
+        "text": "Junio"
+      }
+    }
+  },
+  "menu-item#children": {
+    "props": {
+      "id": "menu-item-woman",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/children",
+        "noFollow": true,
+        "tagTitle": "Niños",
+        "text": "Niños"
+      }
+    }
+  },
+  "menu-item#accessories": {
+    "props": {
+      "id": "menu-item-woman",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accessories",
+        "noFollow": true,
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
+      }
+    }
+  },
+  "menu-item#deals": {
+    "props": {
+      "id": "menu-item-woman",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/deals",
+        "noFollow": true,
+        "tagTitle": "Ofertas",
+        "text": "Ofertas"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": ["menu-item#vtex-website"]
+  },
+  "menu-item#vtex-website": {
+    "props": {
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "visit vtex.com"
+      }
+    }
+  }
+}

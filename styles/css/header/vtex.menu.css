@@ -1,0 +1,16 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-link) .menuItem .styledLink {
+  font-size: 30px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-link) .menuItem {
+  border-right: solid 1px #fff;
+  min-width: 170px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-link) .styledLinkContent {
+  justify-content: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--menu-link) .menuItem:last-child {
+  border-right: none;
+}
