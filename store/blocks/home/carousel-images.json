@@ -1,0 +1,38 @@
+{
+  "list-context.image-list#main-carousel-images-two-items": {
+    "children": ["slider-layout#main-carouse-images-two-items"],
+    "props": {
+      "height": 630,
+      "images": [
+        {
+          "image": "assets/categorias-destacadas-moda-infantil.png",
+          "link": {
+            "url": "/categorias-destacadas-moda-infantil"
+          }
+        },
+        {
+          "image": "assets/categorias-destacadas-proteccion.png",
+          "link": {
+            "url": "/categorias-destacadas-proteccion"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#main-carouse-images-two-items": {
+    "props": {
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": false
+      },
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "always",
+      "blockClass": "carousel-two-items"
+    }
+  }
+}

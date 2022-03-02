@@ -1,12 +1,12 @@
 .galleryLayoutOptionButton {
-  background-color: #F0F0F0;
-  color: #3F3F40;
+  background-color: #f0f0f0;
+  color: #3f3f40;
   padding: 0.375rem 0.75rem 0.375rem 0.75rem;
 }
 
 .galleryLayoutOptionButton--selected {
-  background-color: #3F3F40;
-  color: #FFFFFF;
+  background-color: #3f3f40;
+  color: #ffffff;
 }
 
 .galleryLayoutSwitcher {
@@ -14,9 +14,13 @@
   justify-content: center;
   overflow: hidden;
   width: auto !important;
-  align-self: center
+  align-self: center;
 }
 
 .galleryItem--list {
-  border-bottom: 1px #E7E9EE solid;
+  border-bottom: 1px #e7e9ee solid;
+}
+
+.searchResultContainer {
+  padding: 15px;
 }

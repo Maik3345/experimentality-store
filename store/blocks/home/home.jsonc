@@ -2,16 +2,10 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
+      "list-context.image-list#main-carousel-images-two-items",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#shelf"
     ]
   },
 
@@ -21,12 +15,12 @@
       "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/banner-principal.jpg",
+          "mobileImage": "assets/banner-principal-mobile.jpg"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "assets/banner-principal.jpg",
+          "mobileImage": "assets/banner-principal-mobile.jpg"
         }
       ]
     }
@@ -46,7 +40,7 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Productos más buscados",
       "blockClass": "shelfTitle"
     }
   },
@@ -63,10 +57,11 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 1
       },
+      "showPaginationDots": false,
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf"

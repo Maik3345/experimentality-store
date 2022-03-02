@@ -1,0 +1,21 @@
+.minicartQuantityBadge {
+  background: #5b17aa;
+  right: -9px;
+  top: -5px;
+}
+
+.cartIcon {
+  height: 40px;
+  width: 40px;
+  color: #000000;
+}
+
+.openIconContainer {
+  padding: 0;
+  margin: 0 15px;
+  width: 50px;
+}
+
+.openIconContainer :global(.vtex-button) {
+  width: 42px;
+}

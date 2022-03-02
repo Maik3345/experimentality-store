@@ -5,13 +5,16 @@
 }
 
 .container--shelfTitle {
-  color: #727273;
+  color: #000000;
   justify-content: center;
   text-align: center;
 }
 
-.headingLevel2--shelfTitle {
-  font-weight: 200;
+.heading--shelfTitle {
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .container--deals .paragraph {
@@ -31,7 +34,7 @@
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--question .strong {
@@ -45,7 +48,7 @@
   max-width: 540px;
   padding-top: 36px;
   padding-bottom: 84px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--link .strong {
@@ -58,11 +61,11 @@
   text-decoration: none;
   font-size: 36px;
   font-weight: 300;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--title {
-  color: #03034E;
+  color: #03034e;
   font-size: 28px;
   font-weight: 700;
 }
@@ -78,7 +81,7 @@
   }
 
   .container--title {
-    color: #03034E;
+    color: #03034e;
     font-size: 40px;
     font-weight: 700;
     max-width: 60%;
@@ -87,4 +90,18 @@
   .container--title .paragraph {
     line-height: 1.3em;
   }
+}
+
+.paragraph--footer {
+  color: #fff;
+}
+
+.paragraph--title-footer {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.container--footer {
+  justify-content: center;
 }

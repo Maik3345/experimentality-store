@@ -2,7 +2,7 @@
   justify-content: center;
 }
 .sliderLayoutContainer--carousel {
-  background-color: #F0F0F0;
+  background-color: #fff;
 }
 
 .sliderTrackContainer {
@@ -10,8 +10,8 @@
 }
 
 .paginationDotsContainer {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .layoutContainer--shelf {
@@ -22,6 +22,87 @@
 
 .slide--shelf {
   margin-bottom: 25px;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.sliderLeftArrow--carousel {
+  left: 40px;
+}
+
+.sliderRightArrow--carousel {
+  right: 40px;
+}
+
+.paginationDot--carousel {
+  height: 20px !important;
+  width: 20px !important;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+.paginationDot--carousel--isActive {
+  background-color: #ffffff;
+}
+
+.paginationDotsContainer--carousel {
+  margin-bottom: 20px;
+}
+
+.sliderLayoutContainer--carousel-two-items {
+  margin: 30px auto;
+  max-width: 1280px;
+}
+
+.slideChildrenContainer--carousel-two-items {
+  width: 98%;
+}
+
+.sliderLayoutContainer--shelf {
+  margin-top: 30px;
+}
+
+.caretIcon {
+  display: none;
+}
+
+.sliderLeftArrow,
+.sliderRightArrow {
+  height: 40px;
+  width: 35px;
+}
+
+.sliderLeftArrow::before {
+  content: "";
+  background-image: url("assets/Trazado49.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+}
+
+.sliderRightArrow::before {
+  content: "";
+  background-image: url("assets/Trazado50.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+}
+
+.sliderLeftArrow--carousel,
+.sliderRightArrow--carousel {
+  height: 60px;
+  width: 60px;
+  background-color: rgb(96, 96, 96, 0.2) !important;
+}
+
+.sliderLeftArrow--carousel::before,
+.sliderRightArrow--carousel::before {
+  height: 70%;
+  width: 30%;
+  background-size: 100% 100%;
 }

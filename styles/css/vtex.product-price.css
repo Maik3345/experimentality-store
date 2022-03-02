@@ -1,61 +1,47 @@
 .listPrice {
-  color: #727273;
-  margin-bottom: .25rem;
-  font-size: 1rem;
+  color: #5b17aa;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.listPriceValue {
+  text-decoration: none;
 }
 
 .sellingPrice {
   color: #3f3f40;
-  font-size: 1.25rem;
 }
 
 .sellingPriceValue {
-  font-size: 2.25rem;
   font-weight: 700;
 }
 
 .installments {
   color: #727273;
-  margin-bottom: 1rem;
 }
 
 .savings {
-  font-weight: 500;
-  color: #79B03A;
 }
 
 .sellingPriceValue--summary {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2E2E2E;
+  font-size: 18px;
+  font-weight: 300;
+  color: #6b6b6b;
 }
 
 .savings--summary {
-  background: #8BC34A;
-  border-radius: 1000px;
   align-items: center;
   display: flex;
-
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   font-size: 0.875rem;
-  font-weight: 600;
+  color: #6b6b6b;
   vertical-align: baseline;
-  color: #FFFFFF;
 }
 
 .savings-discount--summary {
   font-size: 0.875rem;
-  font-weight: 600;
-  vertical-align: baseline;
-  color: #FFFFFF;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.listPrice--summary {
-  margin-bottom: 0.25rem;
-  font-size: .875rem;
+  color: #6b6b6b;
 }
 
 .installments--summary {
@@ -68,12 +54,4 @@
   border-radius: 1000px;
   align-items: center;
   display: flex;
-}
-
-.savingsPercentage--summaryPercentage {
-  font-size: 0.875rem;
-  font-weight: 600;
-  vertical-align: baseline;
-  color: #FFFFFF;
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }

@@ -1,18 +1,56 @@
 {
-  "vtex.menu@2.x:menu#Products": {
+  "flex-layout.row#policies-title": {
+    "children": ["rich-text#policies-title"],
+    "props": {
+      "blockClass": "title-footer-container"
+    }
+  },
+  "rich-text#policies-title": {
+    "props": {
+      "text": "POLÍTICAS",
+      "blockClass": "title-footer"
+    }
+  },
+  "flex-layout.row#about-us": {
+    "children": ["rich-text#about-us"],
+    "props": {
+      "blockClass": "title-footer-container"
+    }
+  },
+  "rich-text#about-us": {
+    "props": {
+      "text": "SOBRE NOSOTROS",
+      "blockClass": "title-footer"
+    }
+  },
+  "flex-layout.row#follow": {
+    "children": ["rich-text#follow", "social-networks"],
+    "props": {
+      "blockClass": "title-footer-container"
+    }
+  },
+  "rich-text#follow": {
+    "props": {
+      "text": "SÍGUENOS EN:",
+      "blockClass": "title-footer"
+    }
+  },
+  "vtex.menu@2.x:menu#policies": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#news",
-      "menu-item#blackfriday",
-      "menu-item#sale",
-      "menu-item#personalization"
+      "flex-layout.row#policies-title",
+      "menu-item#pldp",
+      "menu-item#pldc",
+      "menu-item#plde",
+      "menu-item#tyc",
+      "menu-item#rs"
     ]
   },
-  "menu-item#news": {
+  "menu-item#pldp": {
     "props": {
-      "id": "menu-item-news",
+      "id": "menu-item-pldp",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -20,14 +58,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "News",
-        "text": "News"
+        "tagTitle": "Políticas de privacidad",
+        "text": "Políticas de privacidad"
       }
     }
   },
-  "menu-item#blackfriday": {
+  "menu-item#pldc": {
     "props": {
-      "id": "menu-item-black-friday",
+      "id": "menu-item-pldc",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -35,14 +73,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "BlackFriday",
-        "text": "Black Friday"
+        "tagTitle": "Políticas de cambio",
+        "text": "Políticas de cambio"
       }
     }
   },
-  "menu-item#sale": {
+  "menu-item#plde": {
     "props": {
-      "id": "menu-item-sale",
+      "id": "menu-item-plde",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -50,14 +88,14 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Sale",
-        "text": "Sale"
+        "tagTitle": "Políticas de envío",
+        "text": "Políticas de envío"
       }
     }
   },
-  "menu-item#personalization": {
+  "menu-item#tyc": {
     "props": {
-      "id": "menu-item-personalization",
+      "id": "menu-item-tyc",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -65,8 +103,23 @@
         "type": "internal",
         "href": "#",
         "noFollow": false,
-        "tagTitle": "Personalization",
-        "text": "Personalization"
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#rs": {
+    "props": {
+      "id": "menu-item-rs",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Responsabilidad social",
+        "text": "Responsabilidad social"
       }
     }
   },
@@ -189,17 +242,15 @@
     }
   },
 
-  "vtex.menu@2.x:menu#footer-clothing": {
+  "vtex.menu@2.x:menu#aboutUs": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#clothing",
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "flex-layout.row#about-us",
+      "menu-item#ett",
+      "menu-item#contactUs",
+      "menu-item#tcn"
     ]
   },
 
@@ -207,30 +258,27 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#clothing-mobile",
-      "menu-item#decoration-mobile",
-      "menu-item#sale-mobile"
-    ]
+    "children": ["menu-item#policies-mobile", "menu-item#about-us-mobile"]
   },
 
-  "menu-item#clothing-mobile": {
+  "menu-item#policies-mobile": {
     "props": {
-      "id": "menu-item-category-clothing",
+      "blockClass": "mobile-list-links",
+      "id": "menu-item-policies",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
+        "href": "/policies",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "POLÍTICAS",
+        "text": "POLÍTICAS"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#policies"]
   },
-  "vtex.menu@2.x:submenu.accordion#clothing": {
+  "vtex.menu@2.x:submenu.accordion#policies": {
     "children": ["vtex.menu@2.x:menu#clothing-accordion"]
   },
 
@@ -239,24 +287,25 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#shorts",
-      "menu-item#tank-tops",
-      "menu-item#shirts",
-      "menu-item#sweatshirt",
-      "menu-item#cropped"
+      "menu-item#pldp",
+      "menu-item#pldc",
+      "menu-item#plde",
+      "menu-item#tyc",
+      "menu-item#rs"
     ]
   },
 
-  "menu-item#decoration-mobile": {
+  "menu-item#about-us-mobile": {
     "props": {
+      "blockClass": "mobile-list-links",
       "itemProps": {
-        "tagTitle": "Decoration",
-        "text": "Decoration"
+        "tagTitle": "SOBRE NOSOTROS",
+        "text": "SOBRE NOSOTROS"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu.accordion#decoration"]
+    "blocks": ["vtex.menu@2.x:submenu.accordion#about-us"]
   },
-  "vtex.menu@2.x:submenu.accordion#decoration": {
+  "vtex.menu@2.x:submenu.accordion#about-us": {
     "children": ["vtex.menu@2.x:menu#footer-decoration-mobile"]
   },
 
@@ -264,11 +313,7 @@
     "props": {
       "orientation": "vertical"
     },
-    "children": [
-      "menu-item#smartphones",
-      "menu-item#videogames",
-      "menu-item#tvs"
-    ]
+    "children": ["menu-item#ett", "menu-item#contactUs", "menu-item#tcn"]
   },
 
   "menu-item#sale-mobile": {
@@ -295,50 +340,50 @@
     ]
   },
 
-  "menu-item#clothing": {
+  "menu-item#ett": {
     "props": {
-      "id": "menu-item-category-clothing",
+      "id": "menu-item-category-ett",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/d",
+        "href": "/ett/d",
         "noFollow": true,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
+        "tagTitle": "Encuentra tu tienda",
+        "text": "Encuentra tu tienda"
       }
     }
   },
 
-  "menu-item#shorts": {
+  "menu-item#contactUs": {
     "props": {
-      "id": "menu-item-shorts",
+      "id": "menu-item-contactUs",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/shorts",
+        "href": "/contactUs",
         "noFollow": false,
-        "tagTitle": "Shorts",
-        "text": "Shorts"
+        "tagTitle": "Contáctanos",
+        "text": "Contáctanos"
       }
     }
   },
 
-  "menu-item#tank-tops": {
+  "menu-item#tcn": {
     "props": {
-      "id": "menu-item-tank-tops",
+      "id": "menu-item-tcn",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/clothing/tank-tops",
+        "href": "/tcn",
         "noFollow": false,
-        "tagTitle": "Tank tops",
-        "text": "Tank tops"
+        "tagTitle": "Trabaja con nosotros",
+        "text": "Trabaja con nosotros"
       }
     }
   },

@@ -1,0 +1,15 @@
+.closeIconButton--drawer-mobile {
+  margin: 0 10px 0 auto;
+}
+
+.closeIcon--drawer-mobile {
+  color: #5b17aa;
+  height: 50px;
+  width: 50px;
+}
+
+.childrenContainer--drawer-mobile :global(.vtex-menu-2-x-styledLinkContent) {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}

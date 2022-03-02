@@ -1,5 +1,5 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--menu-link) .menuItem .styledLink {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--menu-link) .menuItem {
@@ -13,4 +13,39 @@
 
 :global(.vtex-flex-layout-0-x-flexRowContent--menu-link) .menuItem:last-child {
   border-right: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--button-profile) {
+  margin: 0 15px 0 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--button-profile) .menuItem {
+  margin: 0;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--button-profile)
+  .styledLinkContainer {
+  margin: 0;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--button-profile)
+  .menuItem
+  .styledLink {
+  width: 60px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--button-profile)
+  .menuItem
+  .styledLinkIcon {
+  color: #000000;
+}
+
+.menuItem--mobile-list-links {
+  padding: 20px;
+  border-bottom: solid 1px #fff;
+  max-width: 85%;
+  margin: 0 auto;
+  width: 100%;
 }
